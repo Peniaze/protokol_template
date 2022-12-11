@@ -1,0 +1,52 @@
+\documentclass[12pt]{article}
+\usepackage{csquotes}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{xcolor}
+\usepackage[a4paper, margin=2cm]{geometry}
+
+\usepackage{amsmath}
+\usepackage{siunitx}
+
+\usepackage{float}
+
+\usepackage{titlesec}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage[slovak]{babel}
+\usepackage[backend=biber, style=iso-numeric]{biblatex}
+\addbibresource{references.bib}
+
+\addto\captionsslovak{\renewcommand{\tablename}{Tab.}}
+
+% has to be last
+\usepackage{hyperref}
+\usepackage[all]{hypcap}
+
+\begin{document}
+
+\include{title.tex}
+
+
+\tableofcontents
+
+\cleardoublepage\phantomsection\addcontentsline{toc}{section}{Úvod}
+\section*{Úvod}
+Text úvodu.
+
+\section{Vypracovanie}
+Text Vypracovania.
+
+\cleardoublepage\phantomsection\addcontentsline{toc}{section}{Záver}
+\section*{Záver}
+Jak dopadla práce, na které jsem v průběhu laboratorního cvičení pracoval? Podařilo se něco zrealizovat? Jaké byly příčiny případného neúspěchu? Pokud se v laboratorní úloze měřilo… vyčerpávající interpretace a diskuze výsledků. VAŠE TECHNICKÉ ODBORNÉ HODNOCENÍ, ROZBOR, ÚVAHA, ZAMYŠLENÍ, příp. návrh na optimalizaci zkvalitnění procesu.
+
+salto\cite{thick_film}satlo\cite{modeling_em}\cite*{leds_magazine}
+
+\cleardoublepage\phantomsection\addcontentsline{toc}{section}{Literatúra}
+\printbibliography[title=Literatúra]
+
+\end{document}
